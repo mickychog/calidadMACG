@@ -12,3 +12,7 @@ test('Devuelve error con radio negativo r=-3', () => {
     expect(areaCirculo(-3)).toBe('Radio no puede ser negativo');
 });
 
+test('Calcula el area con radio grande r=1000', () => {
+    expect(areaCirculo(1000)).toBeCloseTo(3141592.6536, 4);
+});
+
