@@ -8,4 +8,7 @@ test('Calcula el area con radio cero r=0', () => {
     expect(areaCirculo(0)).toBe(0);
 });
 
+test('Devuelve error con radio negativo r=-3', () => {
+    expect(areaCirculo(-3)).toBe('Radio no puede ser negativo');
+});
 
